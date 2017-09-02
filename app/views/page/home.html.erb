@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alpha-blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="home">Alpha-Blog</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="home">home</a></li>
+		      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="#">Page 1-1</a></li>
+		          <li><a href="#">Page 1-2</a></li>
+		          <li><a href="#">Page 1-3</a></li>
+		        </ul>
+		      </li>
+		      <li><a href="about">About</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		    </ul>
+		  </div>
+		</nav>
+	</header>
+
+  <section>
+  	<div class="container">
+  		<!-- banner -->
+  		<div class="banner">
+  			<img src="/assets/bigstock-blog-icon1.jpg" class="img-rounded" alt="Blog_home image" />
+  		</div>
+  		<!-- content -->
+  		<div class="main-content">
+  			<h1>Welcome to Alpha-Blog....</h1>
+  			<p>So you’ve heard the term “blog” and you want to know what blogs are all about. Well you’ve come to the right place. In this series of articles we will take you from asking what a blog is to having all the knowledge you need to start a blog of your own.</p>
+  			<p>Over the months and years you will be able to share your thoughts with hundreds or thousands of readers, promote yourself, your business or your cause and you may even earn a full time living from your blog.</p>
+  			<%= link_to 'About', about_path %>
+  		</div>
+		</div>
+  </section>
+
+<style type="text/css">
+	.banner img{
+		height: 400px;
+		width: 60%;
+		margin: auto;
+		display: block;
+	}
+	.main-content p{
+		text-align: justify;
+	}
+</style>
+</body>
+</html>
