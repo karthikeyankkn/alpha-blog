@@ -6,19 +6,17 @@
 			<% end %>
 		</ul>
 	<% end %>
-
-<%= form_for @article do |f| %>
-	<p>
-		<%= f.label :title %> <br />
-		<%= f.text_field :title %>
-	</p>
-	<p>
-		<%= f.label :description %> <br />
-		<%= f.text_area :description %>
-	</p>
-	<p>
-		<%= f.submit %>
-	</p>
-<% end %>
-
-<%= link_to "Back to articles listing", articles_path %>
+<div class="row create-blog">
+	<div class="col-md-12">
+		<%= form_for @article do |f| %>
+			<div class="form-group">
+				<%= f.text_field :title, class:"form-control", placeholder:"Title" %>
+			</div>
+			<div class="form-group">
+				<%= f.text_area :description, class:"form-control", placeholder:"Description of the content", rows:"10" %>
+			</div>			
+			<%= f.submit class:"btn btn-success" %>
+			<%= link_to "Cancel", articles_path, class:"btn btn-danger"%>
+		<% end %>	
+	</div>
+</div>
