@@ -1,0 +1,12 @@
+<div class="row error-message">
+	<div class="col-md-12 text-danger">
+		<% if obj.errors.any? %>
+			<h2><%= pluralize(obj.errors.count, "error") %></h2>
+			<ol>
+				<% obj.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+				<% end %>
+			</ol>
+		<% end %>
+	</div>
+</div>
