@@ -40,6 +40,9 @@ h1{
 	font-weight: 200;
 	text-align: center;
 }
+body{
+	background-color: #e8e6ed;
+}
 textarea {
     resize: none;
 }
@@ -54,8 +57,12 @@ textarea {
     letter-spacing: 1px;
 }
 .show-blog{
-	max-width: 600px;
-	margin: auto;
+	max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 50px;
+  box-shadow: 0 5px 30px -6px #BBB9C0;
+
 }
 .show-blog h2{
 	text-align: center;
@@ -76,7 +83,6 @@ textarea {
 .manipulate-article{
 	display: block;
 	text-align: center;
-	margin-bottom: 60px;
 }
 .manipulate-article ul{
 	padding: 0;
@@ -102,11 +108,11 @@ textarea {
 /*footer style*/
 footer{
 	background-color: #252525;
-    padding: 10px 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 footer p{
 	color: #fff;
