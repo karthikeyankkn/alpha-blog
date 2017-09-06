@@ -53,11 +53,57 @@ textarea {
     font-weight: 300;
     letter-spacing: 1px;
 }
+.show-blog{
+	max-width: 600px;
+	margin: auto;
+}
+.show-blog h2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+}
+.show-blog div p{
+	text-align: justify;
+	font-family: initial;
+	font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+}
+.manipulate-article{
+	display: block;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.manipulate-article ul{
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+.manipulate-article ul li{
+	display: inline-block;
+	padding-right: 10px;
+	color: #fff;
+}
+.manipulate-article ul li a{
+	display: block !important;
+	padding: 5px;
+	border: 1px solid;
+  border-radius: 50%;
+}
+.manipulate-article ul li a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
 /*footer style*/
 footer{
 	background-color: #252525;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
