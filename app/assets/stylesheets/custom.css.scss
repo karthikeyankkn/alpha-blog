@@ -26,7 +26,7 @@ $navbar-default-bg: #252525;
 	cursor: pointer;
 }
 .banner{
-	background-image: url('blog_home_bg.jpg');
+	background-image: asset-url('blog_home_bg.jpg');
 	background-size: cover;
 	height: 550px;
 }
