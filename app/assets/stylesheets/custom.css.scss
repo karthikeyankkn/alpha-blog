@@ -64,6 +64,28 @@ textarea {
   box-shadow: 0 5px 30px -6px #BBB9C0;
 
 }
+.show-blog-index{
+	max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 30px -6px #BBB9C0;
+  margin-bottom: 20px;
+  position: relative;
+}
+.show-blog-index h3{
+	color: #373737;
+	line-height: 1.2!important;
+	font-size: 20px;
+	font-weight: 700;
+}
+.show-blog-index p{
+	color: rgba(0, 0, 0, 0.44);
+	margin-bottom: 30px
+}
+.show-blog-index p:hover, .hover-none:hover{
+	text-decoration: none !important;
+}
 .show-blog h2{
 	text-align: center;
 	font-size: 40px;
@@ -104,7 +126,23 @@ textarea {
 	text-decoration: none;
 	cursor: pointer;
 }
+.manipulate-article-index{
+	position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.manipulate-article-index ul{
 
+}
+.manipulate-article-index ul li{
+
+}
+.create-article-index{
+	
+}
+.create-article-index a{
+	
+}
 /*footer style*/
 footer{
 	background-color: #252525;
