@@ -11,6 +11,16 @@
 				<div class="show-blog-index">
 					<h3><%= article.title %></h3>
 					<p class="hidden-sm hidden-xs"><%= truncate(article.description, length:200) %></p>
+					<div class="about-user">
+						<div class="user-img">
+							<!-- <img src="images/kkn_profile_img.jpg" alt="user-image">	 -->
+							<%= image_tag("kkn_profile_img.jpg", :alt => "user-image") %>
+						</div>
+						<ul>
+							<li><%= article.user.username if article.user %></li>
+							<li><small><%= time_ago_in_words(article.updated_at) %> ago</small></li>
+						</ul>
+					</div>
 					<div class="manipulate-article manipulate-article-index">
 						<ul>
 							<li><%= link_to '', edit_article_path(article), class:"glyphicon glyphicon-edit text-warning" %></li>

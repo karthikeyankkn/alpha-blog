@@ -158,3 +158,31 @@ footer p{
     letter-spacing: 0.8px;
     margin: 0;
 }
+.about-user{
+
+}
+.about-user:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.about-user ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	margin-top: 10px;
+}
+.about-user ul li:first-child{
+	color: #333;
+  font-weight: 800;
+}
+.user-img{
+	float: left;
+	padding-right: 10px;
+}
+.user-img img{
+	height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
