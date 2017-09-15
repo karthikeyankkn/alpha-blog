@@ -1,0 +1,23 @@
+<h2 class="text-center">Signin</h2>
+<%= render 'shared/errors', obj:@user %>
+<div class="row show-blog">
+	<div class="col-md-12">
+		<%= form_for @user do |f| %>
+			<div class="form-group">
+				<%= f.text_field :username, class:"form-control", placeholder:"Enter Username" %>
+			</div>
+			<div class="form-group">
+				<%= f.email_field :email, class:"form-control", placeholder:"Enter email"%>
+			</div>
+			<div class="form-group">
+				<%= f.password_field :password, class:"form-control", placeholder:"Enter password"%>
+			</div>
+			<div class="manipulate-article">
+				<ul>
+					<li style="float: left;"><%= link_to "", articles_path, class:"glyphicon glyphicon-chevron-left text-success"%></li>
+					<li><%= f.submit "Sign up", class:"btn btn-info" %></li>
+				</ul>
+			</div>			
+		<% end %>	
+	</div>
+</div>
