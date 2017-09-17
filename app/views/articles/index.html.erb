@@ -3,35 +3,8 @@
   <a href="<%= new_article_path %>" class="btn btn-success">
   	<span class="glyphicon glyphicon-plus-sign"></span> Create new Article
   </a>
-      </p>
-<div class="row">
-	<% @articles.each do |article| %>
-		<a href=<%="/articles/"+"#{article.id}"%> style="border: 0; padding: 0;" class="hover-none">
-			<div class="col-md-6">
-				<div class="show-blog-index">
-					<h3><%= article.title %></h3>
-					<p class="hidden-sm hidden-xs"><%= truncate(article.description, length:200) %></p>
-					<div class="about-user">
-						<div class="user-img">
-							<!-- <img src="images/kkn_profile_img.jpg" alt="user-image">	 -->
-							<%= image_tag("kkn_profile_img.jpg", :alt => "user-image") %>
-						</div>
-						<ul>
-							<li><%= article.user.username if article.user %></li>
-							<li><small><%= time_ago_in_words(article.updated_at) %> ago</small></li>
-						</ul>
-					</div>
-					<div class="manipulate-article manipulate-article-index">
-						<ul>
-							<li><%= link_to '', edit_article_path(article), class:"glyphicon glyphicon-edit text-warning" %></li>
-							<li><%= link_to '', article_path(article), method: :delete, data: {confirm: "Are you sure want to delete?"}, class:"glyphicon glyphicon-trash text-danger" %></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</a>
-	<% end %>
-</div>
+</p>
+<%= render 'articles', obj: @articles %>
 
 
 
