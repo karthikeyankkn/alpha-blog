@@ -9,6 +9,16 @@
 			<p><%= @article.description %></p>
 		</div>
 	</div>
+	<div class="about-user">
+		<div class="user-img">
+			<!-- <img src="images/kkn_profile_img.jpg" alt="user-image">	 -->
+			 <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+		</div>
+		<ul>
+			<li><%= @article.user.username if @article.user %></li>
+			<li><small><%= time_ago_in_words(@article.updated_at) %> ago</small></li>
+		</ul>
+	</div>
 	<div class="manipulate-article">
 		<ul>
 			<li><%= link_to "", articles_path, class:"glyphicon glyphicon-chevron-left text-success" %></li>
